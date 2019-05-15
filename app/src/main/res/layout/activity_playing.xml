@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".PlayingActivity">
+
+    <dyanamitechetan.vusikview.VusikView
+        android:id="@+id/musicView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/playing_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00"
+                android:layout_marginStart="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include
+            android:id="@+id/menu_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/menu_option" />
+
+        <include
+            android:id="@+id/playing_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/playing_control"
+            app:layout_constraintBottom_toTopOf="@id/menu_option"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

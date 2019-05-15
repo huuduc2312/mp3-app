@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PlayMP3</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Create Account</string>
+    <string name="input_name">Name</string>
+    <string name="input_email">Email</string>
+    <string name="input_password">Password</string>
+    <string name="link_login">Already a member? Login</string>
+    <string name="link_signup">No account yet? Create one</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_library">Library</string>
+
+    <string name="name_song">Thế Giới Mất Đi Một Người</string>
+    <string name="name_author">Eddie</string>
+</resources>

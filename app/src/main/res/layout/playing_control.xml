@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:layout_alignParentEnd="true"
+    app:flexDirection="row"
+    app:justifyContent="space_around"
+    app:alignContent="center">
+    <ImageView
+        style="@style/playing_control_btn"
+        android:id="@+id/playing_shuffle"
+        android:src="@drawable/playing_shuffle_enable"/>
+    <ImageView
+        style="@style/playing_control_btn"
+        android:id="@+id/playing_pre"
+        android:src="@drawable/playing_pre"/>
+    <ImageView
+        style="@style/playing_control_btn"
+        android:id="@+id/playing"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:src="@drawable/playing_play"/>
+    <ImageView
+        style="@style/playing_control_btn"
+        android:id="@+id/playing_next"
+        android:src="@drawable/playing_next"/>
+    <ImageView
+        style="@style/playing_control_btn"
+        android:id="@+id/playing_repeat"
+        android:src="@drawable/playing_repeat_one"/>
+</com.google.android.flexbox.FlexboxLayout>

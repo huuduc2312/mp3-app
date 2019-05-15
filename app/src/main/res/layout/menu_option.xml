@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:background="@color/primary_dark"
+    app:flexDirection="row"
+    app:justifyContent="space_around"
+    app:alignContent="center"
+    android:layout_alignParentEnd="true">
+
+    <!-- Home Button -->
+    <com.google.android.flexbox.FlexboxLayout
+        style="@style/menu_btn_flexbox"
+        app:flexDirection="column">
+        <ImageButton
+            style="@style/menu_btn_img"
+            android:src="@drawable/menu_home_enable" />
+        <TextView
+            style="@style/menu_btn_text"
+            android:text="@string/menu_home"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <!-- Search Button -->
+    <com.google.android.flexbox.FlexboxLayout
+        style="@style/menu_btn_flexbox"
+        app:flexDirection="column">
+        <ImageButton
+            style="@style/menu_btn_img"
+            android:src="@drawable/menu_search" />
+        <TextView
+            style="@style/menu_btn_text"
+            android:text="@string/menu_search"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <!-- Add Button -->
+    <com.google.android.flexbox.FlexboxLayout
+        style="@style/menu_btn_flexbox"
+        app:flexDirection="column">
+        <ImageButton
+            style="@style/menu_btn_img"
+            android:src="@drawable/menu_add" />
+        <TextView
+            style="@style/menu_btn_text"
+            android:text="@string/menu_add"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <!-- Library Button -->
+    <com.google.android.flexbox.FlexboxLayout
+        style="@style/menu_btn_flexbox"
+        app:flexDirection="column">
+        <ImageButton
+            style="@style/menu_btn_img"
+            android:src="@drawable/menu_library" />
+        <TextView
+            style="@style/menu_btn_text"
+            android:text="@string/menu_library"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
+</com.google.android.flexbox.FlexboxLayout>

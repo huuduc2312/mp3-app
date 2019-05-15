@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true">
+
+    <ImageView
+        style="@style/playing_title_btn"
+        android:id="@+id/btn_back"
+        android:src="@drawable/btn_back"
+        android:layout_alignParentStart="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/btn_back"
+        android:layout_centerVertical="true">
+        <TextView
+            style="@style/text_normal_white"
+            android:id="@+id/name_song" />
+        <TextView
+            style="@style/text_small_gray"
+            android:id="@+id/name_author" />
+    </LinearLayout>
+    <ImageView
+        style="@style/playing_title_btn"
+        android:id="@+id/btn_add"
+        android:src="@drawable/btn_add"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

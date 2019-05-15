@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_main"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_36sdp"
+        android:paddingLeft="@dimen/_24sdp"
+        android:paddingRight="@dimen/_24sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Name Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/input_text_input_layout">
+            <EditText
+                style="@style/input_edit_text"
+                android:id="@+id/input_name"
+                android:inputType="textCapWords"
+                android:hint="@string/input_name"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/input_text_input_layout">
+            <EditText
+                style="@style/input_edit_text"
+                android:id="@+id/input_email"
+                android:inputType="textEmailAddress"
+                android:hint="@string/input_email"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/input_text_input_layout">
+            <EditText
+                style="@style/input_edit_text"
+                android:id="@+id/input_password"
+                android:inputType="textPassword"
+                android:hint="@string/input_password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            style="@style/input_btn"
+            android:id="@+id/btn_signup"
+            android:text="@string/signup"/>
+
+        <!-- Login Link -->
+        <TextView
+            style="@style/input_link"
+            android:id="@+id/link_login"
+            android:text="@string/link_login"/>
+    </LinearLayout>
+</ScrollView>
